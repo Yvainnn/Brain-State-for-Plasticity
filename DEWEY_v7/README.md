@@ -2,10 +2,8 @@
 
 ## Overview
 
-This document describes the complete preprocessing pipeline applied to diffusion MRI data from the **SWEEP2** study (acute psychosocial stress vs. placebo, within-participant crossover, 3T Siemens Prisma). The pipeline takes raw BIDS data from scanner output to voxel-wise statistical maps in MNI152 space, covering all intermediate steps from complex-domain denoising through atlas-based analysis.
-
 All steps are executed via bash scripts generated in Python and logged per subject/session. Intermediate QA images (SlicesDir) are produced at each major stage.
-
+DEWEY generates a bash script and log file specific to each participant session - can be parallelised via PAR_POOL.sh
 ---
 
 ## Pipeline at a Glance
